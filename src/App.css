@@ -1,0 +1,73 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#root {
+    height: 100vh;
+}
+
+#kanban {
+    width: 100%;
+    height: 800px;
+}
+
+#edit-window {
+    width: 500px;
+    height: 70%;
+}
+
+#edit-window-tabs {
+    width: 100%;
+    height: 90%;
+}
+
+#edit-window-tabs .smart-tab-item > div {
+    padding: 8px;
+    overflow-y: auto;
+}
+
+#edit-window-tabs .editor-label {
+    margin-bottom: calc(var(--smart-data-view-padding) / 2);
+    text-transform: uppercase;
+}
+
+#edit-window-tabs .text-editor {
+    height: 32px;
+}
+
+#edit-window-tabs .editor {
+    width: 100%;
+    margin-bottom: var(--smart-data-view-padding);
+}
+
+#edit-window-tabs .description-editor {
+    height: 90px;
+    min-height: 75px;
+    resize: none;
+    border-top-right-radius: var(--smart-border-top-right-radius);
+    border-top-left-radius: var(--smart-border-top-left-radius);
+    border-bottom-left-radius: var(--smart-border-bottom-left-radius);
+    border-bottom-right-radius: var(--smart-border-bottom-right-radius);
+}
+
+#edit-window-tabs smart-date-time-picker {
+    min-width: unset;
+    width: 100%;
+}
+
+#edit-window-buttons {
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.edit-window-button {
+    width: auto;
+    width: 33%;
+    height: 100%;
+}
